@@ -15,8 +15,8 @@ text-align: left;
 }
 .header img {
     align-items: right;
-    height: auto;
-    width: auto;
+    height: 354px;
+    width: 354px;
     
 }
 
@@ -27,11 +27,14 @@ text-align: left;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
+    justify-content: space-between;
 }
 
 .wrapper .container > div{
     flex: 0 1 auto;
 }
+
 
 div > img ~ p{
     border-radius: 4px;
