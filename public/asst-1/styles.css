@@ -18,6 +18,10 @@ text-align: left;
     height: 354px;
     width: 354px;
     
-  }
-  
+}
+.content, .wrapper {
+    width: 960px;
+    align-items: center;
+    justify-content: center;
+}
 
