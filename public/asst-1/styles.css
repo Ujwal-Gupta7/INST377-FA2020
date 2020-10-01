@@ -1,7 +1,7 @@
 .header {
-    font-family: "sans-serif";
-    background: #040682;
-    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    background: #0234FA;
+    color: #FFFDFA;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -21,7 +21,7 @@ text-align: left;
 }
 
 .container {
-    width: 450px;
+    min-width: 450px;
     max-width: 960px;
     display: flex;
     flex-direction: row;
@@ -38,5 +38,6 @@ div > img ~ p{
 }
 
 body{
-    background: beige;
+    background: #F5F0D0;
+    font: sans-serif;
 }
