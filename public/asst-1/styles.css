@@ -51,7 +51,7 @@ text-align: left;
     margin-bottom: 15px;
     width: 33.3%;
     height: 33.3%;
-    margin-right: 15px;
+    margin-right: 0px;
 }
 
 
@@ -75,32 +75,24 @@ text-align: left;
         margin-bottom: 15px;
         width: 33.3%;
         height: 33.3%;
-        margin-right: 15px;
+        margin-right: 0px;
     }
         .block1 p{
-            margin: 15px 0 0 0;
+            margin: 15px;
             border-radius: 4px;
             padding: 15px;
             flex: 0 1 auto;
         }
         .wrapper .container > div{
-            flex: 1 0 auto;
-        }
-        div > img ~ p{
-            border-radius: 4px;
-            border-width: 1px;
-            border-style: solid;
+            flex: 0 1 auto;
         }
     }
     
-    
-
-
-
-div > img{
-    width: auto;
-    height: auto;
-}
+    div > img ~ p{
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+    }
 
 
 body{
