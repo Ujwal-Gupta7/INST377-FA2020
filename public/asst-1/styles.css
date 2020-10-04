@@ -1,6 +1,19 @@
+/* Colors:
+#B545FF : violet
+#5B3CDE : indigo
+#4E72F5 : navy-ish blue
+#3CA0DE : cerulean blue
+#76FAF8 : light blue / cyan
+*/
+
+body{
+    background: #4E72F5;
+    font: sans-serif;
+}
+
 .header {
     font-family: 'Comfortaa', cursive;
-    background: #FF0010;
+    background: #5B3CDE;
     color: #FFFDFA;
     display: flex;
     justify-content: space-evenly;
@@ -38,7 +51,7 @@ text-align: left;
 
 .block1 p{
     margin: 15px;
-    background: #FFFFFE;
+    background: #76FAF8;
     border: solid 1px transparent;
     width: 350px;
     flex: 0 1 auto;
@@ -74,7 +87,7 @@ div > img ~ p{
 }
 
 .block2 {
-    background: #FFFFFE;
+    background: #76FAF8;
     border: solid 1px transparent;
     border-width: 1px;
     border-style: solid;
@@ -82,9 +95,4 @@ div > img ~ p{
     flex: 0 1 auto;
     padding: 15px;
     flex-wrap: wrap;
-}
-
-body{
-    background: #35FF0B;
-    font: sans-serif;
 }
