@@ -63,12 +63,15 @@ h2 {
     margin: 15px;
     background: #FFFDFA;
     border: solid 1px transparent;
-    width: 400px;
+    width: 190px;
 }
 
 .block1 img{
-    width: 100;
-    height: 100;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    width: 190;
+
 }
 
 .wrapper .container > div{
@@ -80,6 +83,7 @@ div > img ~ p{
     border-radius: 4px;
     border-width: 1px;
     border-style: solid;
+    width: 190;
 }
 
 .block2 {
@@ -102,9 +106,16 @@ div > img ~ p{
         margin-right: 0px;
         flex-wrap: wrap;
     }
+    .block1 img{
+        border-radius: 4px;
+        border-width: 1px;
+        border-style: solid;
+        width: 190;
+    }
     div > img ~ p{
         border-radius: 4px;
         border-width: 1px;
         border-style: solid;
+        width: 190;
     }
 }
