@@ -78,6 +78,17 @@ div > img ~ p{
     border-style: solid;
 }
 
+.block2 {
+    background: #76FAF8;
+    border: solid 1px transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    flex: 0 1 auto;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width: 1000px){
     .container{
         justify-content: center;
@@ -92,15 +103,4 @@ div > img ~ p{
         border-width: 1px;
         border-style: solid;
     }
-}
-
-.block2 {
-    background: #76FAF8;
-    border: solid 1px transparent;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 4px;
-    flex: 0 1 auto;
-    padding: 15px;
-    flex-wrap: wrap;
 }
