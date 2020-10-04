@@ -36,14 +36,22 @@ text-align: left;
     align-items: flex-start;
 }
 
+.block1 {
+    flex: 0 1 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 .block1 p{
     margin: 15px;
     background: #FFFFFE;
     border: solid 1px transparent;
-    width: 350px;
-    flex: 0 1 auto;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    width: 400px;
+}
+
+.block1 img{
+    width: 100;
+    height: 100;
 }
 
 .wrapper .container > div{
