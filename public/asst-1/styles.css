@@ -13,6 +13,7 @@ body{
 
 .header {
     font-family: 'Comfortaa', cursive;
+    font-weight: 500;
     background: #5B3CDE;
     color: #FFFDFA;
     display: flex;
@@ -36,6 +37,7 @@ body{
 
 h2 {
     font-family: 'Comfortaa', cursive;
+    font-weight: 300;
 }
 
 .wrapper {
