@@ -7,7 +7,7 @@
 */
 
 body{
-    background: #4E72F5;
+    background: #76FAF8;
     font: sans-serif;
 }
 
@@ -61,7 +61,7 @@ h2 {
 
 .block1 p{
     margin: 15px;
-    background: #76FAF8;
+    background: #FFFDFA;
     border: solid 1px transparent;
     width: 400px;
 }
@@ -83,7 +83,7 @@ div > img ~ p{
 }
 
 .block2 {
-    background: #76FAF8;
+    background: #FFFDFA;
     border: solid 1px transparent;
     border-width: 1px;
     border-style: solid;
