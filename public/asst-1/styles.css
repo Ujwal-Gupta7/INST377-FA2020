@@ -24,7 +24,7 @@ body{
 }
 
 .header, p {
-text-align: left;
+    text-align: left;
 }
 
 .header img {
@@ -32,6 +32,10 @@ text-align: left;
     height: 100px;
     width: 100px;
     
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
 }
 
 .wrapper {
