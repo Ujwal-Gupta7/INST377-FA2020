@@ -1,6 +1,6 @@
 .header {
     font-family: 'Comfortaa', cursive;
-    background: #0234FA;
+    background: #FF0010;
     color: #FFFDFA;
     display: flex;
     justify-content: space-evenly;
@@ -13,89 +13,78 @@
 .header, p {
 text-align: left;
 }
+
 .header img {
     align-items: right;
-    height: 354px;
-    width: 354px;
+    height: 100px;
+    width: 100px;
     
 }
 
-.content{
-    width: 960px;
-}
-
-
-
-
-
- 
-    
-    
-
-
-
-.container {
+.wrapper {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    max-width: 960px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
 }
 
-.block1{
-    display:flex;
-    flex-wrap: wrap;
-    flex: 1 0  auto;
+.block1 p{
+    margin: 15px;
+    background: #FFFFFE;
+    border: solid 1px transparent;
+    width: 350px;
+    flex: 0 1 auto;
     justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    margin-bottom: 15px;
-    width: 33.3%;
-    height: 33.3%;
-    margin-right: 0px;
+    flex-wrap: wrap;
 }
 
+.wrapper .container > div{
+    flex: 0 1 auto;
+    margin-right: 15px;
+}
 
-
+div > img ~ p{
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+}
 
 @media screen and (max-width: 1000px){
-    .container {
+    .container{
         justify-content: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
     }
-    .block1{
-        display:flex;
-        flex-wrap: wrap;
-        flex: 0 1  auto;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 0;
-        margin-bottom: 15px;
-        width: 33.3%;
-        height: 33.3%;
+    .wrapper .container > div{
+        flex: 1 0 auto;
         margin-right: 0px;
+        flex-wrap: wrap;
     }
-        .block1 p{
-            margin: 15px;
-            border-radius: 4px;
-            padding: 15px;
-            flex: 0 1 auto;
-        }
-        .wrapper .container > div{
-            flex: 0 1 auto;
-        }
-    }
-    
     div > img ~ p{
+        border-radius: 4px;
         border-width: 1px;
         border-style: solid;
-        border-radius: 4px;
     }
+}
 
+.block2 {
+    background: #FFFFFE;
+    border: solid 1px transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    flex: 0 1 auto;
+    padding: 15px;
+    flex-wrap: wrap;
+}
 
 body{
-    background: #00F6E5;
+    background: #35FF0B;
     font: sans-serif;
 }
