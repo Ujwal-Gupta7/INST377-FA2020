@@ -67,23 +67,29 @@ function testFunction() {
     const labHeader = document.querySelector('h1');
     labHeader.textContent = response;
     function random(number) {
-        return Math.floor(Math.random()*number);
+        return Math.floor(Math.random()*(number+1));
       }
-    const rbackground = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-    document.body.style.backgroundColor = rbackground;
+    const page_background = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+    document.body.style.backgroundColor = page_background;
 
-    var centerForm = document.getElementsByClassName("flex-outer");
-    for(var i = 0; i < centerForm.length; i++){
-        centerForm[i].style.margin = "0 auto";
+    var center_form = document.getElementsByClassName("flex-outer");
+    for(var i = 0; i < center_form.length; i++){
+        center_form[i].style.margin = "0 auto";
         }
     
-    var fruit = document.querySelector("checkbox-list-label");
-    fruit.textContent = "FRUITS";
-
+    const fruit = document.querySelector(".checkbox-list-label");
+    fruit.innerHTML = "Fruits";
     
+    
+    const fruitLabels = document.querySelectorAll(".flex-inner li label");
+    fruitsList = ["oranges", "apple", "strawberry"];
+    fruitLabels.forEach((i, j) => {
+        const fruit_content = i.innerText;
+        console.log(fruit_content);
+        i.innerText = fruitsList[j];
     })
-   
     
+    })  
 }
 
 </script>
