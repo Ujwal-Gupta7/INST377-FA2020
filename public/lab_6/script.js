@@ -33,8 +33,15 @@ document.body.addEventListener('submit', async (e) => {
         document.querySelector('.flex-inner').remove();
       }
       const randomList = [];
+
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min); 
+      }
+
       for (let i = 0; i < fromServer; i+=1) {
-        index = Math.floor(Math.random() * (fromServer.length-1 - 0) + 0);
+        index = getRandomInt(0, 243);
         randomList.push(fromServer[index]);
       }
       const tenList = [];
