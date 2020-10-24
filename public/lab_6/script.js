@@ -33,15 +33,8 @@ document.body.addEventListener('submit', async (e) => {
         document.querySelector('.flex-inner').remove();
       }
       const randomList = [];
-
-      function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min) + min); 
-      }
-
-      for (let i = 0; i < fromServer; i+=1) {
-        index = getRandomInt(0, 243);
+      for (let i = 0; i < fromServer.length; i+=1) {
+        index = Math.floor(Math.random() * ((fromServer.length -1) - 0) + 0);
         randomList.push(fromServer[index]);
       }
       const tenList = [];
@@ -53,13 +46,14 @@ document.body.addEventListener('submit', async (e) => {
       ul.className = 'flex-inner';
       $('form').prepend(ul);
       
-      reverseArray.forEach((el, j) => {
+      reverseArray.forEach((el, i) => {
         const li = document.createElement('li');
-        $(li).append('<input type="checkbox" value =$(el.code) id=$(el.code) />');
-        $(li).append('<label for=$(el.code)>$(el.name)</label>');
+        $(li).append(`<input type="checkbox" value=${el.code} id=${el.code} />`);
+        $(li).append(`<label for=${el.code}>${el.name}</label>`);
         $(ul).append(li);
       });
       console.log('fromServer', fromServer);
+      console.log('reverseArray', reverseArray);
     })
     .catch((err) => console.log(err));
 });
