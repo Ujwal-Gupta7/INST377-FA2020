@@ -34,7 +34,7 @@ document.body.addEventListener('submit', async (e) => {
       }
       const randomList = [];
       for (let i = 0; i < fromServer; i+=1) {
-        index = Math.floor(Math.random() * i);
+        index = Math.floor(Math.random() * (fromServer.length-1 - 0) + 0);
         randomList.push(fromServer[index]);
       }
       const tenList = [];
