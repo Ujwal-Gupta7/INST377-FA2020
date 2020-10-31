@@ -1,6 +1,37 @@
+function range(int) {
+  const arr = [];
+  for (let i = 0; i < int; i += 1) {
+    arr.push(i);
+  }
+  return arr;
+}
+
+
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
-  return list;
+
+  const rangeArray = range(10);
+  const randomArray = rangeArray.map((m) => {
+    const randomElement = Math.floor(Math.random() * ((restaurantList.length -1) - 0) + 0);
+    const restaurant = restaurantList[randomElement];
+    return restaurant;
+  });
+  console.table(randomArray);
+  const div = document.createElement('div');
+  div.innerHTML = `<h2>What we have</h2> <br />${JSON.stringify(randomArray[0])} <br /><br />`;
+
+  const foodData = randomArray.reduce((list, item, i) => {
+    const findRestaurant = list.find((f) => f.label === item.category);
+    if (!findRestaurant) {
+      list.push({
+        label: item.category,
+        y: 1
+      });
+    } else {
+      findRestaurant.y += 1;
+    }
+    return list;
+  }, []);
 }
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
